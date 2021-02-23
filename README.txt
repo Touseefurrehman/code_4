@@ -1,27 +1,16 @@
-Please do not invest more than four hours on this.
-Upload your results to a Github Gist, for easier sharing and reviewing.
+There were so many flaws in the given code . Tried to remove most of them .
+But still i can do alot of improvements in given code to make it more efficient and reusable
 
-Thank you and good luck!
+Used Jobs or Event Listener for sending email
+Excessive use of checks has been removed
+Excessive use of arrays have been reduced which are making code terrible
+Laravel validation should be used which can reduce alot of unnecessary checks
+Booking repository has extra methods and code . Mostly methods are not used in controller
+So many useless variables are declare in code and fetched queries as well , those are useless for that method
+Excessive use of functions ,familiar functionalities can be performed by single method
 
+I should recommend to use services for business logic ,
+repository of DB purpose e.g (queries , posting data)
+and use controllers for (validating , authentication and re-routing)
 
-
-Code to refactor
-=================
-1) app/Http/Controllers/BookingController.php
-2) app/Repository/BookingRepository.php
-
-
-
-
-
-What I expect:
-
-A. A readme with:
-
-1.  Your thoughts about the code. What makes it amazing code. Or what makes it ok code. Or what makes it terrible code. How would you have done it. Thoughts on formatting. Logic.. 
-2.  Refactor it if you feel it needs formatting. The more love you put into it. The easier for us to asses.  
-
-Make two commits. First commit with original code. Second with your refactor so we can easily trace changes. 
-
-Best regards
-TechEsthete
+This approach or pattern can divide code into minimum chunks which would easy to reuse and flexible for enhancing functionality

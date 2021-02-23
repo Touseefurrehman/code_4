@@ -231,5 +231,8 @@ class UserRepository extends BaseRepository
     {
         return User::where('user_type', 2)->get();
     }
-    
+
+    public function getUser($id){
+        return User::find($id);
+    }
 }
